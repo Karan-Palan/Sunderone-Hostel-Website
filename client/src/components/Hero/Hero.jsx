@@ -23,37 +23,37 @@ const Hero = () => {
               <br />
             </motion.h1>
           </div>
-          <div className="flexColStart secondaryText flexhero-des">
+          <div className="flexColStart aText flexhero-des">
             <span>
-              Welcome
+              Affordable rates, top-notch facilities, vibrant student community.
             </span>
-            <span>Some text</span>
+            <span>
+              and much more. Experience the best of hostel living with us!
+            </span>
           </div>
 
-          <div className="flexCenter search-bar">
-            <HiLocationMarker color="var(--blue)" size={25} />
-            <input type="text" />
-            <button className="button">Search</button>
-          </div>
+          <button className="button">
+            Get Started with the Sundarone Experience
+          </button>
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={1} end={24} duration={4} /> <span>+</span>
+                <CountUp start={1} end={24} duration={2} /> <span>+</span>
               </span>
               <span className="secondaryText">Hostels</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={500} end={5000} duration={4} /> <span>+</span>
+                <CountUp start={5} end={2000} duration={4} /> <span>+</span>
               </span>
               <span className="secondaryText">Happy Customers</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={50} /> <span>+</span>
+                <CountUp end={50} duration={2} /> <span>+</span>
               </span>
               <span className="secondaryText">TBD</span>
             </div>
@@ -71,7 +71,7 @@ const Hero = () => {
             }}
             className="image-container"
           >
-            <img src="./copy.png" alt="houses" />
+            <img src="./hero.png" alt="houses" />
           </motion.div>
         </div>
       </div>
