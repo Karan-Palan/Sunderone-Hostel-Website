@@ -1,23 +1,23 @@
 import { HiShieldCheck } from "react-icons/hi";
-import { MdCancel, MdAnalytics } from "react-icons/md";
+import { MdCandlestickChart, Md1KPlus } from "react-icons/md";
 const data = [
   {
-    icon: <HiShieldCheck/>,
-    heading: "Best interest rates on the market",
+    icon: <HiShieldCheck />,
+    heading: "Facilities Galore",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Enjoy top-notch facilities including a gym, swimming pool, and more for the ultimate comfort during your stay.",
   },
   {
-    icon: <MdCancel />,
-    heading: "Prevent unstable prices",
+    icon: <MdCandlestickChart />,
+    heading: "Best Price Guarantee",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Experience affordability without compromise on quality. We offer the best value for your budget-conscious stay.",
   },
   {
-    icon: <MdAnalytics />,
-    heading: "Best price on the market",
+    icon: <Md1KPlus />,
+    heading: "Vibrant Student Community",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Join our dynamic community with exclusive events like DJ nights and festive celebrations, fostering unforgettable memories and lifelong friendships.",
   },
 ];
 export default data;
