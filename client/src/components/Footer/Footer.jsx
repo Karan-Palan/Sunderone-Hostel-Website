@@ -20,8 +20,8 @@ const Footer = () => {
         <div className="flexColStart f-right">
           <span className="primaryText">Come, Have a visit !</span>
           <span className="secondaryText">
-            Sundarone Main office, Manipal University Jaipur, Dehmi Kalan,Bagru,
-            Jaipur. Rajasthan-303007
+            Sundarone Main office, near Sundarone Boys Hostel, Manipal
+            University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007
           </span>
           <div className="flexCenter f-menu">
             <span style={{ fontSize: "24px" }}>

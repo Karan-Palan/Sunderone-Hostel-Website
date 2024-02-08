@@ -7,6 +7,7 @@ import Value from "./components/WhyAreWeBetter/Value";
 import Footer from "./components/Footer/Footer";
 import StudentLife from "./components/Contacts/Contacts";
 import Content from "./components/Content/Content";
+import Amenities from "./components/Amenities/Amenities";
 
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -39,6 +40,7 @@ function App() {
       <Value />
       <Content />
       <StudentLife />
+      <Amenities/>
       <Footer />
     </div>
   );
