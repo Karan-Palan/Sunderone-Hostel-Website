@@ -14,7 +14,6 @@ import {
 } from "react-icons/md";
 import data from "../../utils/accordion.jsx";
 import "./Value.css";
-// Demo styles, see 'Styles' section below for some notes on use.
 
 const Value = () => {
   return (
@@ -31,13 +30,42 @@ const Value = () => {
         <div className="flexColStart v-right">
           <span className="orangeText">Why Sundarone</span>
 
-          <span className="primaryText">Why are we better ?</span>
+          <span className="primaryText">
+            {" "}
+            <a href="/">Why are we better ?</a>
+          </span>
 
           <span className="secondaryText">
             Choose us for unbeatable value, unmatched facilities, and a vibrant
             student community.
             <br />
-            Experience hostel living at its finest!
+            Experience hostel living at its finest!{" "}
+            <span
+              style={{
+                position: "relative",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+              }}
+            >
+              <a href="/" style={{ textDecoration: "none", color: "inherit" }}>
+                Get to know more here
+              </a>
+              <style>
+                {`
+      span:hover::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px; /* Adjust the thickness of the line as needed */
+        background-color: gold; /* Set the color of the line */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s ease; /* Animation duration and easing */
+      }
+    `}
+              </style>
+            </span>
           </span>
 
           <Accordion
