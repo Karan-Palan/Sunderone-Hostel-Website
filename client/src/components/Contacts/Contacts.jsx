@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const StudentLife = () => {
-  const phoneNumber = "02112314514"; // Phone number without spaces
+  const phoneNumber = "9772379100"; // Phone number without spaces
 
   const settings = {
     dots: true,
@@ -56,7 +56,7 @@ const StudentLife = () => {
                         href={`tel:${phoneNumber}`}
                         className="phoneNumberLink"
                       >
-                        021 123 145 14
+                        9772379100
                       </a>
                     </span>
                   </div>
@@ -76,10 +76,10 @@ const StudentLife = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Instagram</span>
-                    <span className="secondaryText">Idname</span>
+                    <span className="secondaryText">SUNDARONE HOSTEL MUJ</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Check out our page</div>
+                <div className="flexCenter button"><a href="https://www.instagram.com/sundaronehostel/">Check out our page</a></div>
               </div>
             </div>
           </div>

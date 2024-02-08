@@ -25,19 +25,46 @@
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
-    right: 20px; 
-    background-color: #25d366; 
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    right: 20px;
+    background-color: #25d366;
+    width: 56px; /* Width and height to make it a circle initially */
+    height: 56px;
+    border-radius: 50%; /* Make it a circle */
+    text-align: center; /* Center the logo and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    font-size: 16px;
-    z-index: 9999; 
-}
-
-.whatsapp-button:hover {
-    background-color: #128c7e; 
-}
-
-
-
+    font-size: 0; /* Hide text initially */
+    z-index: 9999;
+    overflow: hidden; /* Hides overflow when logo expands */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+  .whatsapp-button:hover {
+    width: 160px; /* Expand width on hover to create a rectangle */
+    border-radius: 10px; /* Adjust border-radius to make it a rounded rectangle */
+    padding: 10px 20px; /* Add padding to accommodate the text */
+    font-size: 16px; /* Show text on hover */
+  }
+  
+  .whatsapp-logo {
+    width: 24px;
+    height: auto;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+  .whatsapp-text {
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .whatsapp-button:hover .whatsapp-logo {
+    transform: translateX(-50%); /* Move logo to the left */
+  }
+  
+  .whatsapp-button:hover .whatsapp-text {
+    opacity: 1; /* Show text on hover */
+    font-size: 16px; /* Ensure text is visible on hover */
+  }
+  

@@ -1,0 +1,37 @@
+.slider-container {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Maximum width */
+  }
+  
+  @media (max-width: 768px) {
+    .slider-container {
+      max-width: 600px; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider-container {
+      max-width: 400px; /* Adjust width for even smaller screens */
+    }
+  }
+  
+  /* Adjust video height based on screen width */
+  @media (max-width: 768px) {
+    .slick-slide iframe {
+      height: calc((100vw - 40px) * 201.98 / 360); /* Adjust aspect ratio for smaller screens */
+      width: calc(100vw - 40px); /* Set video width to fill the container */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slick-slide iframe {
+      height: calc((100vw - 20px) * 201.98 / 360); /* Adjust aspect ratio for even smaller screens */
+      width: calc(100vw - 20px); /* Set video width to fill the container */
+    }
+  }
+  .header {
+    color: #1F3E72; /* Set text color to #1F3E72 */
+    text-align: center; /* Center align the text */
+    padding: 5px;
+  }
+    
