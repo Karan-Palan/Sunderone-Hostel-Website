@@ -3,8 +3,8 @@ import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Residencies from "./components/Residencies/Residencies";
 import Value from "./components/WhyAreWeBetter/Value";
-import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
+import StudentLife from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </div>
       <Residencies/>
       <Value/>
-      <Contacts/>
+      <StudentLife/>
       <Footer/>
     </div>
   );

@@ -20,6 +20,19 @@ const Footer = () => {
             <span>x</span>
             <span>y</span>
             <span>z</span>
+            <a
+              className="whatsapp-button"
+              href="https://wa.me/123456789?text=Hello%20there!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1195px-WhatsApp.svg.png"
+                alt="WhatsApp Logo"
+                style={{ width: "24px", height: "24px", marginRight: "8px" }}
+              />
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>

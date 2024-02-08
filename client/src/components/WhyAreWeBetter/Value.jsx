@@ -14,6 +14,7 @@ import {
 } from "react-icons/md";
 import data from "../../utils/accordion.jsx";
 import "./Value.css";
+  
 
 const Value = () => {
   return (
