@@ -1,62 +1,76 @@
 .h-wrapper {
-    z-index: 99;
-    background-color: var(--black);
-    position: sticky;
-    top: 0;
-  }
-  .h-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: var(--secondary);
-    justify-content: space-between;
-  }
-  
-  .h-menu {
-    gap: 2rem;
-  }
-  .h-menu > * {
-    position: relative;
+  z-index: 99;
+  background-color: var(--black);
+  position: sticky;
+  top: 0;
+}
+
+.h-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
+  justify-content: space-between;
+  position: relative; /* Ensure the menu icon's absolute position is relative to this container */
+}
+
+.h-menu {
+  gap: 2rem;
+}
+
+.h-menu > * {
+  position: relative;
 }
 
 .h-menu > *::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px; 
-    background-color: gold; 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease; 
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: gold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
 }
 
 .h-menu > *:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
+.menu-icon {
+  display: none;
+  position: absolute;
+  top: 1rem; /* Adjust positioning as needed */
+  right: 1rem; /* Adjust positioning as needed */
+  cursor: pointer;
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.mobile-menu {
+  display: none;
+  color: var(--black);
+  position: absolute;
+  gap: 2rem;
+  font-weight: 500;
+  flex-direction: column;
+  right: 4rem;
+  top: 3rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 200ms ease;
+  align-items: flex-start;
+  padding: 3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
   .menu-icon {
-    display: none;
+    display: block;
   }
-  
-  @media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-    }
-    .h-menu {
-      color: var(--black);
-      position: absolute;
-      gap: 2rem;
-      font-weight: 500;
-      flex-direction: column;
-      right: 4rem;
-      top: 3rem;
-      background: white;
-      display: flex;
-      border-radius: 10px;
-      transition: all 200ms ease;
-      align-items: flex-start;
-      padding: 3rem;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-    }
+  .h-menu {
+    display: none; /* Hide the default menu */
   }
-  
+  .mobile-menu {
+    display: flex; /* Show mobile menu */
+  }
+}
