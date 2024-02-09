@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import StudentLife from "./components/Contacts/Contacts";
 import Content from "./components/Content/Content";
 import Amenities from "./components/Amenities/Amenities";
+import Address from "./components/Address/Address";
 
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -41,6 +42,7 @@ function App() {
       <Content />
       <StudentLife />
       <Amenities/>
+      <Address/>
       <Footer />
     </div>
   );

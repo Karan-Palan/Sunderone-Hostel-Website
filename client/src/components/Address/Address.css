@@ -1,0 +1,38 @@
+.map-container {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Maximum width */
+  }
+  
+  @media (max-width: 768px) {
+    .map-container {
+      max-width: 600px; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container {
+      max-width: 400px; /* Adjust width for even smaller screens */
+    }
+  }
+  
+  /* Adjust iframe size based on screen width */
+  @media (max-width: 768px) {
+    .map-container iframe {
+      height: calc((100vw - 40px) * 600 / 800); /* Adjust height based on aspect ratio */
+      width: calc(100vw - 40px); /* Set iframe width to fill the container */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container iframe {
+      height: calc((100vw - 20px) * 600 / 800); /* Adjust height based on aspect ratio */
+      width: calc(100vw - 20px); /* Set iframe width to fill the container */
+    }
+  }
+  
+  .header {
+    color: #1F3E72; /* Set text color to #1F3E72 */
+    text-align: center; /* Center align the text */
+    padding: 5px;
+  }
+  
