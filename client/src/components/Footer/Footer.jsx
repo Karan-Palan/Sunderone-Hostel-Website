@@ -5,6 +5,41 @@ import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const GoldenHoverLink = () => {
+    const linkStyle = {
+      position: "relative",
+      textDecoration: "none",
+      color: "transparent",
+      backgroundImage: "linear-gradient(to bottom, #ADD8E6, #00008B)",
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+    };
+
+    return (
+      <a
+        href="https://www.linkedin.com/in/karan-palan-476472289/"
+        style={linkStyle}
+      >
+        Karan Palan
+        <style>
+          {`
+          a:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: gold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+          }
+        `}
+        </style>
+      </a>
+    );
+  };
+
   return (
     <div className="f-wrapper">
       <div className="paddings innerWidth flexCenter f-container">
@@ -18,12 +53,12 @@ const Footer = () => {
         </div>
 
         <div className="flexColStart f-right">
-          <span className="primaryText">Come, Have a visit !</span>
-          <span className="secondaryText">
-            Made with ❤️ by <a href="https://twitter.com/Karan_Palan7"> Karan Palan</a>
+          <span className="primaryText">
+            Visit Again
           </span>
+          <span style={{ fontSize: "20px" }}>Made with ❤️ by <GoldenHoverLink />, MUJ 27', residing in Sundarone GS</span>
           <div className="flexCenter f-menu">
-            <span style={{ fontSize: "24px" }}>
+            <span >
               <a href="https://wa.me/9772379100?text=Hello%20there!">
                 <FaWhatsapp />
               </a>

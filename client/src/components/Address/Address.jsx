@@ -5,6 +5,7 @@ const Address = () => {
   return (
     <div className="content-container">
       <h2 className="header primaryText">Come, Have a visit</h2>
+      <p className="secondaryText flexCenter">Sundarone Office, Tejasvi Greens, Dhemi Kalan, Ajmer Road, near Ajmer Road, Jaipur, Rajasthan, Rajasthan 303007</p>
       <div className="map-container">
         <iframe
           title="Google Map"

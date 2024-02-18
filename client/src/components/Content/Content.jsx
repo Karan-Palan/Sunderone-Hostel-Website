@@ -38,7 +38,7 @@ const Content = () => {
 
   return (
     <div className="content-container">
-      <h2 className="header primaryText">What People Say About Us </h2>
+      <h2 className="header primaryText">Featured Videos </h2>
       <div className="slider-container">
         <Slider {...settings}>
           {videoLinks.map((link, index) => (
