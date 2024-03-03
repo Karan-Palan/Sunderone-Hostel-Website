@@ -1,24 +1,39 @@
 /* Amenities.css */
 .g-wrapper {
-    background-color: white; /* Set background to white */
+  background-color: white; /* Set background to white */
+}
+
+.amenities-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.amenities-container.scrolling {
+  animation: scrollAnimation 35s linear infinite;
+}
+
+.amenity {
+  text-align: center;
+  margin: 20px;
+}
+
+.amenity-icon {
+  margin-bottom: 10px;
+}
+
+.amenity-label {
+  font-size: 16px;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
   }
-  
-  .amenities-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  100% {
+    transform: translateX(calc(-100% - 20px)); /* Account for margin */
   }
-  
-  .amenity {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .amenity-icon {
-    margin-bottom: 10px;
-  }
-  
-  .amenity-label {
-    font-size: 16px;
-  }
-  
+}

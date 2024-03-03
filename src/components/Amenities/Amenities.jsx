@@ -1,5 +1,5 @@
 // Amenities.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faSwimmer, 
@@ -8,7 +8,10 @@ import {
   faUtensils, 
   faShieldAlt, 
   faTv, 
-  faParking 
+  faParking,
+  faCar,
+  faCoffee,
+  faBed
 } from '@fortawesome/free-solid-svg-icons';
 import "./Amenities.css";
 
@@ -20,15 +23,28 @@ const Amenities = () => {
     { icon: faUtensils, label: "Fresh Food" },
     { icon: faShieldAlt, label: "Security" },
     { icon: faTv, label: "TV Entertainment" },
-    { icon: faParking, label: "Parking" }
+    { icon: faParking, label: "Parking" },
+    { icon: faCar, label: "Car Rental" },
+    { icon: faCoffee, label: "Coffee Shop" },
+    { icon: faBed, label: "Comfortable Rooms" }
   ];
+
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScrolling(true);
+    }, 35000); // Change this value to adjust scroll speed
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div id="get-started" className="g-wrapper">
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
           <span className="primaryText">Amenities like no other in Town</span>
-          <div className="amenities-container">
+          <div className={`amenities-container ${scrolling ? 'scrolling' : ''}`}>
             {amenityIcons.map((amenity, index) => (
               <div key={index} className="amenity">
                 <div className="amenity-icon">
