@@ -9,6 +9,7 @@ const Hero = () => {
       <div className="paddings innerWidth flexCenter hero-container">
         <div className="flexColStart hero-left">
           <div className="hero-title">
+            <div className="white-gradient" />
             <div className="orange-circle" />
             <motion.h1
               initial={{ y: "2rem", opacity: 0 }}

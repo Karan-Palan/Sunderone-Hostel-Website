@@ -5,20 +5,14 @@
 
 .amenities-container {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.amenities-container.scrolling {
-  animation: scrollAnimation 35s linear infinite;
+  justify-content: center; /* Center the icons horizontally */
+  flex-wrap: wrap; /* Allow the icons to wrap to a new line */
 }
 
 .amenity {
   text-align: center;
   margin: 20px;
+  flex: 0 0 calc(25% - 100px); /* Adjust based on your desired number of amenities per row */
 }
 
 .amenity-icon {
@@ -27,13 +21,4 @@
 
 .amenity-label {
   font-size: 16px;
-}
-
-@keyframes scrollAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% - 20px)); /* Account for margin */
-  }
 }

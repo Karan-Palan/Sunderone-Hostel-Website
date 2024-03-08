@@ -9,6 +9,7 @@ import StudentLife from "./components/Contacts/Contacts";
 import Content from "./components/Content/Content";
 import Amenities from "./components/Amenities/Amenities";
 import Address from "./components/Address/Address";
+import HostelInfo from "./components/HostelInfo";
 
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -31,10 +32,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="progress-bar" style={{ width: `${scrollProgress}%` }} />
+      <Header />
       <div>
         <div className="white-gradient" />
-        <Header />
         <Hero />
       </div>
       <Residencies />
@@ -44,6 +44,7 @@ function App() {
       <Amenities/>
       <Address/>
       <Footer />
+      {/* <HostelInfo/> */}
     </div>
   );
 }

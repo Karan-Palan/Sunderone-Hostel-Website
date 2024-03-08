@@ -34,7 +34,7 @@ const Amenities = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setScrolling(true);
-    }, 35000); // Change this value to adjust scroll speed
+    }, 50000); // Change this value to adjust scroll speed
 
     return () => clearInterval(interval);
   }, []);
