@@ -54,9 +54,9 @@ const Hero = () => {
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={50} duration={2} /> <span>+</span>
+                <CountUp end={10} duration={2} /> <span>+</span>
               </span>
-              <span className="secondaryText">TBD</span>
+              <span className="secondaryText">Facilities</span>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Hero = () => {
             }}
             className="image-container"
           >
-            <img src="./bldg4.jpeg" alt="houses" />
+            <img src="./head.jpeg" alt="houses" />
           </motion.div>
         </div>
       </div>

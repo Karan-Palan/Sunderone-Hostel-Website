@@ -1,44 +1,106 @@
 [
   {
-    "name": "GS residency",
-    "price": "1,70,000",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./bldg1.jpeg",
+    "name": "Rudransh Residency",
+    "price": "1,65,000* / year",
+    "gender": "Boys",
+    "detail": "Vasundhara Colony,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 1.jpg",
+    "link" : "#"
+  },
+  {
+    "name": "Sumer Residency",
+    "price": "1,70,000* / year",
+    "gender": "Girls",
+    "detail": "Plot no-159,160, Tejasvi Greens, near Manipal University Jaipur, Dehmi Kalan,Jaipur. Rajasthan-303007",
+    "image": "./Hostel 2.jpg",
+    "link" : "#"
+  },
+  {
+    "name": "Daddy's",
+    "price": "1,55,000* / year",
+    "gender": "Girls",
+    "detail": "Plot no 318-319, Tejasvi Greens, near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 3.jpeg",
+    "link" : "#"
+  },
+  {
+    "name": "Studio 1 and 2",
+    "price": "1,50,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no-134, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 8.jpeg",
+    "link" : "#"
+  },
+  {
+    "name": "ABM ",
+    "price": "1,55,000* / year",
+    "gender": "Girls",
+    "detail": "Plot no 75-76, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 6.jpg",
     "link" : "#"
   },
   {
     "name": "GS residency",
-    "price": "1,70,000",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./bldg2.jpeg",
+    "price": "1,55,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no 74,77, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 8.jpg",
     "link" : "#"
   },
   {
-    "name": "GS residency",
-    "price": "1,70,000",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./bldg3.jpeg",
+    "name": "Anvi residency",
+    "price": "1,50,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no 74,77, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 9.jpeg",
     "link" : "#"
   },
   {
-    "name": "GS residency",
-    "price": "1,70,000",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./bldg4.jpeg",
+    "name": "Riddhima hostel",
+    "price": "1,60,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no 26, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 10.jpeg",
     "link" : "#"
   },
   {
-    "name": "GS residency",
-    "price": "66,353",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./bldg5.jpeg",
+    "name": "Vasundhra",
+    "price": "1,65,000* / year",
+    "gender": "Girls",
+    "detail": "Plot no 96, Vasundhra,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 11.jpeg",
     "link" : "#"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Sundarone Main office, near Sundarone Boys Hostel, Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
-    "image": "./girlbldg.jpeg",
+    "name": "Police line ",
+    "price": "1,80,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no 13 14 15 16 21 22 23 24, Gurukul Enclave, opposite Central detective Training Institute,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel  12.png",
+    "link" : "#"
+  },
+  {
+    "name": "Manushree residency",
+    "price": "1,80,000* / year",
+    "gender": "Boys",
+    "detail": "Plot no-290, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 4.jpeg",
+    "link" : "#"
+  },
+  {
+    "name": "HR residency",
+    "price": "1,65,000*/ year",
+    "gender": "Girls",
+    "detail": "Plot no-141, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 12.jpeg",
+    "link" : "#"
+  },
+  {
+    "name": "Hiya",
+    "price": "1,90,000*/ year",
+    "gender": "Girls",
+    "detail": "E-6 7, Tejasvi Greens,near Manipal University Jaipur, Dehmi Kalan,Bagru, Jaipur. Rajasthan-303007",
+    "image": "./Hostel 13.jpeg",
     "link" : "#"
   }
 ]

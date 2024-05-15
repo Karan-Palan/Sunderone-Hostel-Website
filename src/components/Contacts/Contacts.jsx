@@ -2,22 +2,9 @@ import React from "react";
 import "./Contacts.css";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const StudentLife = () => {
   const phoneNumber = "9772379100"; // Phone number without spaces
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
 
   const handleCallNow = () => {
     window.location.href = `tel:${phoneNumber}`;
@@ -79,7 +66,9 @@ const StudentLife = () => {
                     <span className="secondaryText">SUNDARONE HOSTEL MUJ</span>
                   </div>
                 </div>
-                <div className="flexCenter button"><a href="https://www.instagram.com/sundaronehostel/">Check out our page</a></div>
+                <div className="flexCenter button">
+                  <a href="https://www.instagram.com/sundaronehostel/">Check out our page</a>
+                </div>
               </div>
             </div>
           </div>
@@ -87,18 +76,16 @@ const StudentLife = () => {
 
         {/* right side */}
         <div className="flexEnd c-right">
-          <div className="image-container">
-            <Slider {...settings}>
-              <div>
-                <img src="hero.png" alt="" />
-              </div>
-              <div>
-                <img src="hero.png" alt="" />
-              </div>
-              <div>
-                <img src="hero.png" alt="" />
-              </div>
-            </Slider>
+          <div className="video-container">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/7oPHdEbOAWI" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen>
+            </iframe>
           </div>
         </div>
       </div>

@@ -76,6 +76,10 @@ a {
   color: rgb(93, 92, 102);
   font-size: 0.9rem;
 }
+.genderText {
+  color: #ff922d;
+  font-size: 1.2rem;
+}
 .aText {
   color: rgb(226, 218, 218);
   font-size:  1 rem;

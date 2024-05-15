@@ -56,7 +56,7 @@ const Footer = () => {
           <span className="primaryText">
             Visit Again
           </span>
-          <span style={{ fontSize: "20px" }}>Made with ❤️ by <GoldenHoverLink />, MUJ 27', residing in Sundarone GS</span>
+          <span style={{ fontSize: "20px" }}> <GoldenHoverLink /></span>
           <div className="flexCenter f-menu">
             <span >
               <a href="https://wa.me/9772379100?text=Hello%20there!">

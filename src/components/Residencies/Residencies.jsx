@@ -34,13 +34,13 @@ const Residencies = () => {
           {data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
-
-                <span className="secondaryText r-price">
-                  <span style={{ color: "orange" }}>$</span>
+                <img src={card.image} className="h-300 w-200" alt="home" />
+                <span className="secondaryText r-price py-4">
+                  <span style={{ color: "blue" }}>₹ </span>
                   <span>{card.price}</span>
                 </span>
                 <span className="primaryText">{card.name}</span>
+                <span className="genderText">{card.gender}</span>
                 <span className="secondaryText">{card.detail}</span>
               </div>
             </SwiperSlide>
