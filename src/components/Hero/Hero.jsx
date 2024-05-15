@@ -32,11 +32,11 @@ const Hero = () => {
               and much more. Experience the best of hostel living with us!
             </span>
           </div>
-
-          <button className="button">
-            Get Started with the Sundarone Experience
-          </button>
-
+          <a href="https://forms.gle/GBTvo478AnNRWnn47">
+            <button className="button">
+              Book now !
+            </button>
+          </a>
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
