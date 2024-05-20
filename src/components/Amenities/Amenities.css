@@ -12,7 +12,7 @@
 .amenity {
   text-align: center;
   margin: 20px;
-  flex: 0 0 calc(25% - 100px); /* Adjust based on your desired number of amenities per row */
+  flex: 0 0 calc(20% - 40px); /* Adjust based on your desired number of amenities per row */
 }
 
 .amenity-icon {

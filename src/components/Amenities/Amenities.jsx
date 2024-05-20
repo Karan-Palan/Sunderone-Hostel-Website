@@ -11,7 +11,15 @@ import {
   faParking,
   faCar,
   faCoffee,
-  faBed
+  faBed,
+  faBroom, // Housekeeping
+  faConciergeBell, // Reception
+  faFireExtinguisher, // Fire Extinguisher
+  faElevator, // Elevator
+  faBath, // Attached Bathroom
+  faKitchenSet, // Kitchen
+  faBatteryFull, // Power Backup
+  faWater // Geyser
 } from '@fortawesome/free-solid-svg-icons';
 import "./Amenities.css";
 
@@ -26,7 +34,15 @@ const Amenities = () => {
     { icon: faParking, label: "Parking" },
     { icon: faCar, label: "Car Rental" },
     { icon: faCoffee, label: "Coffee Shop" },
-    { icon: faBed, label: "Comfortable Rooms" }
+    { icon: faBed, label: "Comfortable Rooms" },
+    { icon: faBroom, label: "Housekeeping" },
+    { icon: faConciergeBell, label: "Reception" },
+    { icon: faFireExtinguisher, label: "Fire Extinguisher" },
+    { icon: faElevator, label: "Elevator" },
+    { icon: faBath, label: "Attached Bathroom" },
+    { icon: faKitchenSet, label: "Kitchen" },
+    { icon: faBatteryFull, label: "Power Backup" },
+    { icon: faWater, label: "Geyser" }
   ];
 
   const [scrolling, setScrolling] = useState(false);
