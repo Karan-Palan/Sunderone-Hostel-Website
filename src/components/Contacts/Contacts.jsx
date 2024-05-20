@@ -4,7 +4,7 @@ import { BsFillChatDotsFill } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 
 const StudentLife = () => {
-  const phoneNumber = "9772379100"; // Phone number without spaces
+  const phoneNumber = "9772379100";
 
   const handleCallNow = () => {
     window.location.href = `tel:${phoneNumber}`;
@@ -13,7 +13,6 @@ const StudentLife = () => {
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
-        {/* left side */}
         <div className="flexColStart c-left">
           <span className="orangeText">Student life</span>
           <span className="primaryText">
@@ -29,7 +28,6 @@ const StudentLife = () => {
           </span>
 
           <div className="flexColStart contactModes">
-            {/* first row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
@@ -74,18 +72,15 @@ const StudentLife = () => {
           </div>
         </div>
 
-        {/* right side */}
         <div className="flexEnd c-right">
           <div className="video-container">
-            <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/7oPHdEbOAWI" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen>
-            </iframe>
+            <iframe
+              src="https://www.youtube.com/embed/7oPHdEbOAWI"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
