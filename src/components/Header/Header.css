@@ -1,3 +1,4 @@
+/* General styles */
 .h-wrapper {
   z-index: 99;
   background-color: var(--black);
@@ -10,10 +11,13 @@
   padding-bottom: 1rem;
   color: var(--secondary);
   justify-content: space-between;
-  position: relative; /* Ensure the menu icon's absolute position is relative to this container */
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .h-menu {
+  display: flex;
   gap: 2rem;
 }
 
@@ -40,10 +44,10 @@
 .menu-icon {
   display: none;
   position: absolute;
-  top: 1rem; /* Adjust positioning as needed */
-  right: 1rem; /* Adjust positioning as needed */
+  top: 1rem;
+  right: 1rem;
   cursor: pointer;
-  z-index: 100; /* Ensure it's above other elements */
+  z-index: 100;
 }
 
 .mobile-menu {
@@ -53,14 +57,25 @@
   gap: 2rem;
   font-weight: 500;
   flex-direction: column;
-  right: 4rem;
-  top: 3rem;
+  right: 1rem;
+  top: 3.5rem;
   background: white;
   border-radius: 10px;
   transition: all 200ms ease;
   align-items: flex-start;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .h-menu {
+    gap: 1.5rem;
+  }
+
+  .h-container img {
+    width: 150px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -70,7 +85,29 @@
   .h-menu {
     display: none; /* Hide the default menu */
   }
+}
+
+@media (max-width: 480px) {
+  .h-container img {
+    width: 120px;
+  }
+
   .mobile-menu {
-    display: flex; /* Show mobile menu */
+    right: 0.5rem;
+    top: 3rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Ensure the mobile menu is hidden when not in use */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: none; /* Initially hidden */
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu.open {
+    display: flex; /* Show mobile menu when menu is open */
   }
 }

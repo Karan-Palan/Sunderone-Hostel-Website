@@ -14,8 +14,7 @@ const Header = () => {
     <section className="h-wrapper">
       <div className="flexCenter innerWidth paddings h-container">
         <a href="link">
-          {" "}
-          <img src="./logo.png" alt="logo" width={200} />{" "}
+          <img src="./logo.png" alt="logo" width={200} />
         </a>
         <div className="flexCenter h-menu">
           <a href="#residencies">Hostels</a>
@@ -29,16 +28,14 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} />
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="mobile-menu">
-          <a href="#residencies">Hostels</a>
-          <a href="#value">Our Facilities</a>
-          <a href="#get-started">Student Life</a>
-          <button className="button">
-            <a href="tel:9772379100">Contact Us</a>
-          </button>
-        </div>
-      )}
+      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <a href="#residencies">Hostels</a>
+        <a href="#value">Our Facilities</a>
+        <a href="#get-started">Student Life</a>
+        <button className="button">
+          <a href="tel:9772379100">Contact Us</a>
+        </button>
+      </div>
     </section>
   );
 };
